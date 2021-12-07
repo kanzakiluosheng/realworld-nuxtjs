@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
 
     # 下载源码
@@ -46,8 +46,7 @@ jobs:
 
     # 部署到服务器
     - name: Deploy
-      #uses: appleboy/ssh-action@master
-      uses: Amadevus/pwsh-script@v2
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
