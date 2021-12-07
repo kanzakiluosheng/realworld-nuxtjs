@@ -47,13 +47,13 @@ jobs:
     # 部署到服务器
     - name: Deploy
       #uses: appleboy/ssh-action@master
+      uses: Amadevus/pwsh-script@v2
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        #script: |
-        run: |
+        script: |
           cd C:/webapps/realworld-nuxtjs1
           rmdir /s/q realworld-nuxtjs1
           mkdir realworld-nuxtjs1
