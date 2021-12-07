@@ -53,7 +53,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd C:/webapps/realworld-nuxtjs1
+          c:
+          cd C:/webapps
           rmdir /s/q realworld-nuxtjs1
           mkdir realworld-nuxtjs1
           wget https://github.com/kanzakiluosheng/realworld-nuxtjs/releases/latest/download/release.tar -O realworld-nuxtjs1.tar
