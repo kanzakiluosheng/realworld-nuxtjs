@@ -52,8 +52,19 @@ module.exports = {
     plugins:['~/plugins/request.js','~/plugins/dayjs.js'],
     server:{
         host:'0.0.0.0',
-        port:9991,
-    }
+        port:8991,
+    },
+    head: {
+        title: 'conduit',
+        meta: [
+          { charset: 'utf-8' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+          { hid: 'description', name: 'description', content: 'Meta description' }
+        ],
+        link: [
+            { rel: 'favicon',  href: '/favicon.ico' }
+        ],
+      }
     // modules: [
     //     // 请求代理配置，解决跨域
     //     '@gauseen/nuxt-proxy',

@@ -72,7 +72,7 @@
                   },
                 }"
               >
-                <img :src="article.author.image" />
+                <img :src="article.author.image" onerror="this.src='/smiley-cyrus.jpg';this.onerror=null;" />
               </nuxt-link>
               <div class="info">
                 <nuxt-link

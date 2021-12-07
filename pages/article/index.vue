@@ -44,7 +44,7 @@ export default {
   },
   head() {
     return {
-      title: this.article.title,
+      title:'conduit '+this.article.title,
       meta: [
         {
           hid: "description",
