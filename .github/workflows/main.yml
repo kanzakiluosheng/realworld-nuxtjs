@@ -61,4 +61,4 @@ jobs:
           tar xvf realworld-nuxtjs1.tar -C .\realworld-nuxtjs1
           cd .\realworld-nuxtjs1
           npm install 
-          C:\Users\Administrator\AppData\Roaming\npm\pm2.cmd reload pm2.config.json reload pm2.config.json
+          C:\Users\Administrator\AppData\Roaming\npm\pm2.cmd reload pm2.config.json
