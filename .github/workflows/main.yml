@@ -46,13 +46,14 @@ jobs:
 
     # 部署到服务器
     - name: Deploy
-      uses: appleboy/ssh-action@master
+      #uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: |
+        #script: |
+        run: |
           cd C:/webapps/realworld-nuxtjs1
           rmdir /s/q realworld-nuxtjs1
           mkdir realworld-nuxtjs1
